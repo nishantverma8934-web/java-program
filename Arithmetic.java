@@ -1,15 +1,22 @@
+import java.util.*;
 public class Arithmetic{
     public static void main(String[]args){
-        int a = 10,b = 5;
-        int addition = a+b;
-        int subtraction =a-b;
-        int multiplication =a*b;
-        int division =a/b;
-        int modulus =a%b;
-        System.out.println("Arithmetic Operators:");
-        System.out.println("Addition:"+addition);
-        System.out.println("Multiplication:"+multiplication);
-        System.out.println("Division:"+division);
-        System.out.println("Modulus:"+modulus);
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a first number:");
+        int first = input.nextInt();
+        System.out.print("Enter a second number:");
+        int second = input.nextInt();
+
+        int add = first + second;
+        int sub = first - second;
+        int mul = first * second;
+        int div = first / second;
+        int mod = first % second;
+
+        System.out.println("Addition is:"+add);
+        System.out.println("Subtraction is:"+sub);
+        System.out.println("Multiplication is:"+mul);
+        System.out.println("Division is:"+div);
+        System.out.println("Modulus is:"+mod);
     }
 }
